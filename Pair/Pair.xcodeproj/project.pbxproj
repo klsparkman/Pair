@@ -10,13 +10,9 @@
 		35569ADE2440C4A200E7B6E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35569ADD2440C4A200E7B6E0 /* AppDelegate.swift */; };
 		35569AE02440C4A200E7B6E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35569ADF2440C4A200E7B6E0 /* SceneDelegate.swift */; };
 		35569AE52440C4A200E7B6E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35569AE32440C4A200E7B6E0 /* Main.storyboard */; };
-		35569AE82440C4A200E7B6E0 /* Pair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35569AE62440C4A200E7B6E0 /* Pair.xcdatamodeld */; };
 		35569AEA2440C4A400E7B6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35569AE92440C4A400E7B6E0 /* Assets.xcassets */; };
 		35569AED2440C4A400E7B6E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35569AEB2440C4A400E7B6E0 /* LaunchScreen.storyboard */; };
-		35569AF92440C6DF00E7B6E0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35569AF82440C6DE00E7B6E0 /* CoreDataStack.swift */; };
-		35569AFB2440C73500E7B6E0 /* People+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35569AFA2440C73500E7B6E0 /* People+Convenience.swift */; };
 		35569AFF2440C7EC00E7B6E0 /* KLSPeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35569AFE2440C7EC00E7B6E0 /* KLSPeopleTableViewController.swift */; };
-		35569B012440C9F000E7B6E0 /* KLSPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35569B002440C9F000E7B6E0 /* KLSPersonTableViewCell.swift */; };
 		35569B032440CD9C00E7B6E0 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35569B022440CD9C00E7B6E0 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,14 +21,10 @@
 		35569ADD2440C4A200E7B6E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35569ADF2440C4A200E7B6E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		35569AE42440C4A200E7B6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		35569AE72440C4A200E7B6E0 /* Pair.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pair.xcdatamodel; sourceTree = "<group>"; };
 		35569AE92440C4A400E7B6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35569AEC2440C4A400E7B6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35569AEE2440C4A400E7B6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35569AF82440C6DE00E7B6E0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		35569AFA2440C73500E7B6E0 /* People+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "People+Convenience.swift"; sourceTree = "<group>"; };
 		35569AFE2440C7EC00E7B6E0 /* KLSPeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSPeopleTableViewController.swift; sourceTree = "<group>"; };
-		35569B002440C9F000E7B6E0 /* KLSPersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSPersonTableViewCell.swift; sourceTree = "<group>"; };
 		35569B022440CD9C00E7B6E0 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,9 +98,6 @@
 		35569AF72440C6C900E7B6E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				35569AE62440C4A200E7B6E0 /* Pair.xcdatamodeld */,
-				35569AF82440C6DE00E7B6E0 /* CoreDataStack.swift */,
-				35569AFA2440C73500E7B6E0 /* People+Convenience.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,7 +105,6 @@
 		35569AFC2440C7AD00E7B6E0 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
-				35569B002440C9F000E7B6E0 /* KLSPersonTableViewCell.swift */,
 				35569B022440CD9C00E7B6E0 /* PersonController.swift */,
 			);
 			path = ModelController;
@@ -202,13 +190,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35569AE82440C4A200E7B6E0 /* Pair.xcdatamodeld in Sources */,
-				35569AF92440C6DF00E7B6E0 /* CoreDataStack.swift in Sources */,
 				35569ADE2440C4A200E7B6E0 /* AppDelegate.swift in Sources */,
 				35569AE02440C4A200E7B6E0 /* SceneDelegate.swift in Sources */,
 				35569B032440CD9C00E7B6E0 /* PersonController.swift in Sources */,
-				35569AFB2440C73500E7B6E0 /* People+Convenience.swift in Sources */,
-				35569B012440C9F000E7B6E0 /* KLSPersonTableViewCell.swift in Sources */,
 				35569AFF2440C7EC00E7B6E0 /* KLSPeopleTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,19 +389,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		35569AE62440C4A200E7B6E0 /* Pair.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				35569AE72440C4A200E7B6E0 /* Pair.xcdatamodel */,
-			);
-			currentVersion = 35569AE72440C4A200E7B6E0 /* Pair.xcdatamodel */;
-			path = Pair.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 35569AD22440C4A200E7B6E0 /* Project object */;
 }

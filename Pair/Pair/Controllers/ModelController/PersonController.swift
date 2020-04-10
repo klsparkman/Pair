@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CoreData
+typealias People = String
 
 class PersonController {
     
@@ -15,22 +15,21 @@ class PersonController {
     static let shared = PersonController()
     
     var people: [People]  = []
-//    {
-//        let fetchRequest: NSFetchRequest<People> = People.fetchRequest()
-//        return (try? CoreDataStack.contextMOC.fetch(fetchRequest)) ?? []
-//    }
-    //var fetchedRequest: NSAsynchronousFetchRequest <People>
     
+    init() {
+        loadPerson()
+    }
 
     // Mark: - Crud
-    func create(name: String) {
-        let _ = People(name: name)
-        saveToPersistentStore()
+    func create(newPerson: People) {
+        people.append(newPerson)
+        save()
     }
     
     func delete(person: People) {
-        CoreDataStack.contextMOC.delete(person)
-        saveToPersistentStore()
+        guard let index = people.firstIndex(of: person) else {return}
+        people.remove(at: index )
+        save()
     }
     
     func random() {
@@ -42,11 +41,13 @@ class PersonController {
         people = randomPeople
     }
     
-    func saveToPersistentStore() {
-        do {
-            try CoreDataStack.contextMOC.save()
-        } catch {
-            print("There was an error saving the person! \(#function)\(error.localizedDescription)")
-        }
+    func save() {
+        UserDefaults.standard.set(people, forKey: PersonController.personKey)
+    }
+    
+    static let personKey = "PersonKey"
+    func loadPerson() {
+        guard let savedPerson = UserDefaults.standard.array(forKey: PersonController.personKey) as? [People] else {return}
+        people = savedPerson
     }
 }//End of class
