@@ -43,11 +43,17 @@ class KLSPeopleTableViewController: UITableViewController {
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = .cyan
         self.navigationController?.view.addSubview(button)
-       // button.addTarget(self, action: #selector(randomButtonPressed), for: .touchUpInside)
+        button.addTarget(self, action: #selector(randomButtonPressed), for: .touchUpInside)
     }
     
-    func randomButtonPressed() {
-        
+    @objc func randomButtonPressed() {
+        let count = PersonController.shared.people.count
+        if count % 2 == 0 {
+            PersonController.shared.random()
+            tableView.reloadData()
+        } else {
+            print("Can't randomize, sorry!")
+        }
     }
     
     func indexForPerson(indexPath: IndexPath) -> Int {
